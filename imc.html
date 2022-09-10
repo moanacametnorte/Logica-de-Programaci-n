@@ -23,7 +23,24 @@ altura = prompt("informe su altura");
 
 imcCalculado = peso / (altura * altura);
 
-imprimir(nombre + " Su imc calculdo es " + Math.round(imcCalculado));
+imprimir(nombre + " Su imc calculdo es " + imcCalculado);
+
+if(imcCalculado < 18.5){
+imprimir("imc por abajo de lo recomendado")
+}
+if(imcCalculado >= 18.5){
+    if(imcCalculado < 25){
+        imprimir("imc dentro de lo normal");
+    }
+}
+if(imcCalculado >=25){
+    if(imcCalculado < 29.9){
+        imprimir("imc considerado con sobrepeso");
+    }
+}
+if(imcCalculado > 30){
+    imprimir("imc considerado con obesidad");
+}
 
 //imprimir("El promedio de imc es: " + (calcularImc(94, 1.76)+calcularImc(97,1.76))/2);
 //alcularImc(94, 1.76, "Edgardo")
