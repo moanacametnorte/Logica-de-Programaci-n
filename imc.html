@@ -11,4 +11,22 @@
         saltarLinea();
     }
 
+
+function calcularImc(peso,altura, nombre){
+   //imc = peso / (altura * altura);
+   //imprimir("El IMC calculado de: " + nombre + " es "  + imc);
+   return (peso/(altura * altura))
+}
+nombre = prompt("Informe su nombre");
+peso = prompt("Informe su peso");
+altura = prompt("informe su altura");
+
+imcCalculado = peso / (altura * altura);
+
+imprimir(nombre + " Su imc calculdo es " + Math.round(imcCalculado));
+
+//imprimir("El promedio de imc es: " + (calcularImc(94, 1.76)+calcularImc(97,1.76))/2);
+//alcularImc(94, 1.76, "Edgardo")
+//calcularImc(97,1.76, "Edgardo2")
+
  </script>   
